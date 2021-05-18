@@ -3,10 +3,14 @@ body{
     /* background-color: rgba(0,7,33,255); */
     background-image: linear-gradient(to bottom right, #040a27, #1e4378);
     color: #53bae7;
+    
+    max-width: 1080px; 
+    margin: 0 auto !important; 
+    float: none !important;
+}
 
-	max-width: 1080px; 
-	margin: 0 auto !important; 
-	float: none !important;
+.preface{
+    padding: 10px;
 }
 
 
@@ -44,11 +48,7 @@ nav div img{
     font-size: 14px;
 }
 
-.company_image{
-    width: 70px;
-}
-
-#experience{
+.experience, .education{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,6 +80,10 @@ nav div img{
     color: #2684fe;
 }
 
+section h3{
+    text-align: center;
+    margin: 5px auto;
+}
 .company_logo{
     grid-area: company_logo;
     display: flex;
@@ -88,6 +92,7 @@ nav div img{
 }
 .company_image{
     border-radius: 5px;
+    width: 70px;
 }
 
 .company_name {
@@ -121,6 +126,61 @@ nav div img{
 
 
 @media (min-width: 480px) {
+    
+    
+}
 
-  
-  }
+.institutions {
+    display: grid;
+    grid-template-areas:
+    "program_name program_name"
+    "institution_logo institution_name"
+    "program_description program_description";
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    background-color: #09005a;
+    border-radius: 10px;
+    /* flex: 300px; */
+    min-width: 300px;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.institution_image{
+    border-radius: 5px;
+    width: 70px;
+}
+
+.institution_logo{
+    grid-area: institution_logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.institution_name{
+    grid-area: institution_name;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.institution_name a{
+    text-decoration: none;
+    color: #53bae7;
+}
+
+.program_name{
+    grid-area: program_name;
+    color: #2684fe;
+}
+
+.program_name h4{
+    margin: 0px 0px 10px;
+}
+
+.program_description{
+    grid-area: program_description;
+}
