@@ -1,0 +1,126 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: rgba(0,7,33,255); */
+    background-image: linear-gradient(to bottom right, #040a27, #1e4378);
+    color: #53bae7;
+
+	max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important;
+}
+
+
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blue; */
+}
+
+.my_name{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    color: rgb(179,238,249);
+}
+
+.my_first_description{
+    text-align: center;
+    font-size: 14px;
+}
+
+nav div{
+    align-items: center;
+}
+nav div img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #196fb0;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50); */
+}
+
+.preface{
+    font-size: 14px;
+}
+
+.company_image{
+    width: 70px;
+}
+
+#experience{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.position_name h4{
+    margin: 0px 0px 10px;
+}
+
+.jobs {
+    display: grid;
+    grid-template-areas:
+    "position_name position_name"
+    "company_logo company_name"
+    "company_logo position_duration"
+    "position_description position_description";
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    background-color: #040a27;
+    border-radius: 10px;
+    /* flex: 300px; */
+    min-width: 300px;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.position_name{
+    grid-area: position_name;
+    color: #2684fe;
+}
+
+.company_logo{
+    grid-area: company_logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company_image{
+    border-radius: 5px;
+}
+
+.company_name {
+    grid-area: company_name;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company_name a{
+    text-decoration: none;
+    color: #53bae7;
+}
+
+.position_duration {
+    grid-area: position_duration;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.position_description{
+    grid-area: position_description;
+}
+.position_description h5{
+    margin: 5px 0px;
+}
+
+
+@media (min-width: 480px) {
+
+  
+  }
