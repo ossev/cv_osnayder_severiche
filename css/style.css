@@ -20,6 +20,7 @@ body{
 }
 
 .contact_number{
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +29,7 @@ body{
 .whatsapp_logo{
     display: flex;
     margin-right: 5px;
-    fill: white;
+    fill: #53bae7;
     justify-content: center;
     align-items: center;
 }
@@ -56,6 +57,7 @@ nav {
 nav div{
     align-items: center;
 }
+
 nav div img{
     width: 100px;
     border-radius: 50%;
