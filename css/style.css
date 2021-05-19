@@ -2,17 +2,36 @@ body{
     font-family: 'Open Sans', sans-serif;
     /* background-color: rgba(0,7,33,255); */
     background-image: linear-gradient(to bottom right, #040a27, #1e4378);
+
     color: #53bae7;
-    
     max-width: 1080px; 
     margin: 0 auto !important; 
     float: none !important;
 }
 
+
 .preface{
     padding: 10px;
 }
 
+.contact_number a{
+    text-decoration: none;
+    color: #53bae7;
+}
+
+.contact_number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp_logo{
+    display: flex;
+    margin-right: 5px;
+    fill: white;
+    justify-content: center;
+    align-items: center;
+}
 
 nav {
     padding: 10px;
